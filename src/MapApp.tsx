@@ -87,6 +87,15 @@ function MapApp() {
                     </button>
                 </div>
             </div>
+            <div className="footer">
+                <p>
+                    Osoitteiden geokoodaus:{" "}
+                    <a href="https://www.maanmittauslaitos.fi/geokoodauspalvelu">
+                        maanmittauslaitos.fi/geokoodauspalvelu
+                    </a>
+                </p>
+                <a href="www.github.com/peekois/karttapiste-demo">peekois/karttapiste-demo</a>
+            </div>
         </div>
     );
 }
