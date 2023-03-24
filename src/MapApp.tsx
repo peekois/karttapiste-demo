@@ -86,6 +86,9 @@ function MapApp() {
                     <button className="add-button" style={{ width: "10rem" }} onClick={() => handleAddMarker()}>
                         Lisää
                     </button>
+                    <p style={{ fontSize: "12px", margin: "0" }}>
+                        Pitäis toimia myös pelkällä osoitteella tai pelkällä postinumerolla ja kaupungin nimellä
+                    </p>
                 </div>
                 <div className="footer">
                     Osoitteiden geokoodaus:
