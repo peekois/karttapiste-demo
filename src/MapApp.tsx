@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import "./MapApp.css";
 import { MapContainer, Marker, Popup, TileLayer, Tooltip, useMap } from "react-leaflet";
 import axios from "axios";
 
-function App() {
+function MapApp() {
     const [address, setAddress] = useState({ streetaddress: "", city: "", postalCode: "" });
-    const [userLocation, setUserLocation] = useState({ lat: 60.183347, lng: 24.939903 });
-    const [locations, setLocations] = useState<Array<Location>>([{ lat: 60.183347, lng: 24.939903 }]);
+    const [userLocation, setUserLocation] = useState({ lat: 0, lng: 0 });
+    const [locations, setLocations] = useState<Array<Location>>([]);
 
     useEffect(() => {
         navigator.geolocation.getCurrentPosition((position) => {
@@ -44,10 +44,8 @@ function App() {
 
     return (
         <div className="app">
-            <p>
-                {userLocation.lat}, {userLocation.lng}
-            </p>
             <div className="map-container">
+                <h1>Karttapiste demo</h1>
                 <MapContainer className="map" center={[60.183347, 24.939903]} zoom={11.5} maxZoom={18}>
                     <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -135,4 +133,4 @@ function deg2rad(deg: number) {
     return deg * (Math.PI / 180);
 }
 
-export default App;
+export default MapApp;
