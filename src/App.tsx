@@ -32,7 +32,15 @@ function App() {
         );
     }
 
-    const markers = locations.map((location, index) => <Marker position={location}></Marker>);
+    const markers = locations.map((location, index) => (
+        <div>
+            <Marker position={location}>
+                <Tooltip direction="top" opacity={1} permanent>
+                    {calculateDistance(location, userLocation).toString().slice(0, 4)} km
+                </Tooltip>
+            </Marker>
+        </div>
+    ));
 
     return (
         <div className="app">
