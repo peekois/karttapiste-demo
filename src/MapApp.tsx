@@ -87,7 +87,7 @@ function MapApp() {
                         Lisää
                     </button>
                 </div>
-                <p style={{ fontSize: "12px", marginTop: "1rem", textAlign: "center" }}>
+                <p className="disclaimer">
                     Pitäis toimia myös pelkällä osoitteella tai pelkällä postinumerolla ja kaupungin nimellä
                 </p>
                 <div className="footer">
