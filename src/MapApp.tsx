@@ -95,7 +95,7 @@ function MapApp() {
                     <a href="https://www.maanmittauslaitos.fi/geokoodauspalvelu" style={{ marginBottom: "0.1rem" }}>
                         maanmittauslaitos.fi/geokoodauspalvelu
                     </a>
-                    <a href="www.github.com/peekois/karttapiste-demo">github/peekois/karttapiste-demo</a>
+                    <a href="https://www.github.com/peekois/karttapiste-demo">github/peekois/karttapiste-demo</a>
                 </div>
             </div>
         </div>
