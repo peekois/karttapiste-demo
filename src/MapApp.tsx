@@ -45,7 +45,7 @@ function MapApp() {
         <div className="app">
             <div className="map-container">
                 <h1>Karttapiste demo</h1>
-                <MapContainer className="map" center={[60.183347, 24.939903]} zoom={11.5} maxZoom={18}>
+                <MapContainer className="map" center={[60.183347, 24.939903]} zoom={11.4} maxZoom={18}>
                     <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -86,15 +86,15 @@ function MapApp() {
                         Lisää
                     </button>
                 </div>
-            </div>
-            <div className="footer">
-                <p>
-                    Osoitteiden geokoodaus:{" "}
-                    <a href="https://www.maanmittauslaitos.fi/geokoodauspalvelu">
-                        maanmittauslaitos.fi/geokoodauspalvelu
-                    </a>
-                </p>
-                <a href="www.github.com/peekois/karttapiste-demo">peekois/karttapiste-demo</a>
+                <div className="footer">
+                    <p>
+                        Osoitteiden geokoodaus:{" "}
+                        <a href="https://www.maanmittauslaitos.fi/geokoodauspalvelu">
+                            maanmittauslaitos.fi/geokoodauspalvelu
+                        </a>
+                    </p>
+                    <a href="www.github.com/peekois/karttapiste-demo">peekois/karttapiste-demo</a>
+                </div>
             </div>
         </div>
     );
