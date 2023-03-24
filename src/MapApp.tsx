@@ -45,7 +45,8 @@ function MapApp() {
         <div className="app">
             <div className="map-container">
                 <h1>Karttapiste demo</h1>
-                <MapContainer className="map" center={[60.183347, 24.939903]} zoom={11.4} maxZoom={18}>
+                <MapContainer className="map" center={userLocation} zoom={11.4} maxZoom={18}>
+                    <CenterMap center={userLocation} />
                     <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -107,6 +108,19 @@ interface Address {
 interface Location {
     lat: number;
     lng: number;
+}
+
+function CenterMap({ center }: CenterMapProps) {
+    const map = useMap();
+    useEffect(() => {
+        map.setView(center);
+    }, [center, map]);
+
+    return null;
+}
+
+interface CenterMapProps {
+    center: Location;
 }
 
 async function getLocation(address: Address): Promise<Location> {
