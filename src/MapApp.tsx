@@ -86,16 +86,16 @@ function MapApp() {
                     <button className="add-button" style={{ width: "10rem" }} onClick={() => handleAddMarker()}>
                         Lisää
                     </button>
-                    <p style={{ fontSize: "12px", margin: "0" }}>
-                        Pitäis toimia myös pelkällä osoitteella tai pelkällä postinumerolla ja kaupungin nimellä
-                    </p>
                 </div>
+                <p style={{ fontSize: "12px", marginTop: "1rem", textAlign: "center" }}>
+                    Pitäis toimia myös pelkällä osoitteella tai pelkällä postinumerolla ja kaupungin nimellä
+                </p>
                 <div className="footer">
-                    Osoitteiden geokoodaus:
-                    <a href="https://www.maanmittauslaitos.fi/geokoodauspalvelu" style={{ marginBottom: "1rem" }}>
+                    Geokoodaus API:
+                    <a href="https://www.maanmittauslaitos.fi/geokoodauspalvelu" style={{ marginBottom: "0.1rem" }}>
                         maanmittauslaitos.fi/geokoodauspalvelu
                     </a>
-                    <a href="www.github.com/peekois/karttapiste-demo">peekois/karttapiste-demo</a>
+                    <a href="www.github.com/peekois/karttapiste-demo">github/peekois/karttapiste-demo</a>
                 </div>
             </div>
         </div>

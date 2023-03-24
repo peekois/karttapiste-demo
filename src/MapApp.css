@@ -37,6 +37,11 @@ h2 {
     margin-bottom: 1rem;
     margin-top: 3rem;
 }
+
+.footer a {
+    color: #bcbcbc;
+}
+
 @media (max-width: 768px) {
     .inputs {
         flex-direction: column;
