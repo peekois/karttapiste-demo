@@ -87,12 +87,10 @@ function MapApp() {
                     </button>
                 </div>
                 <div className="footer">
-                    <p>
-                        Osoitteiden geokoodaus:{" "}
-                        <a href="https://www.maanmittauslaitos.fi/geokoodauspalvelu">
-                            maanmittauslaitos.fi/geokoodauspalvelu
-                        </a>
-                    </p>
+                    Osoitteiden geokoodaus:
+                    <a href="https://www.maanmittauslaitos.fi/geokoodauspalvelu" style={{ marginBottom: "1rem" }}>
+                        maanmittauslaitos.fi/geokoodauspalvelu
+                    </a>
                     <a href="www.github.com/peekois/karttapiste-demo">peekois/karttapiste-demo</a>
                 </div>
             </div>
