@@ -17,7 +17,6 @@ function MapApp() {
     function handleInputChange(ev: React.ChangeEvent<HTMLInputElement>) {
         const { id, value } = ev.target;
         setAddress((prev) => ({ ...prev, [id]: value }));
-        console.log(address);
     }
 
     async function handleAddMarker() {
@@ -33,7 +32,7 @@ function MapApp() {
     }
 
     const markers = locations.map((location, index) => (
-        <div>
+        <div key={index}>
             <Marker position={location}>
                 <Tooltip direction="top" opacity={1} permanent>
                     {calculateDistance(location, userLocation).toString().slice(0, 4)} km
